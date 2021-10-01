@@ -4,7 +4,7 @@ function sendRequest(e) {
   e.preventDefault();
 
   if (validateemail(),checkdeuxemails()) {
-      fetch("script.php", {
+      fetch("contact.php", {
               method: "POST",
               body: new FormData(document.querySelector('form'))
           })
