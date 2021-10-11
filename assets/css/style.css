@@ -737,6 +737,11 @@ select:visited {
     font-size: 40px;
   }
 }
+@media (max-width: 400px) {
+  .organio-header-section.header-style-one .site-logo .site-name {
+    font-size: 30px;
+  }
+}
 @media (max-width: 1150px) {
   .organio-header-section.header-style-one .site-logo {
     width: 400px;

@@ -147,6 +147,10 @@
 				@include desktop {
 					font-size: 40px;
 				}
+				@include mobile-xs {
+					font-size: 30px;
+				}
+
 			}
 			@include desktop {
 				width: 400px;
