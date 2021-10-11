@@ -123,6 +123,10 @@ Color Code
   left: 0;
 }
 
+body {
+  min-width: 330px;
+}
+
 /*global area*/
 /*----------------------------------------------------*/
 @media (prefers-reduced-motion: no-preference) {
@@ -744,7 +748,7 @@ select:visited {
 }
 @media (max-width: 1150px) {
   .organio-header-section.header-style-one .site-logo {
-    width: 400px;
+    width: auto;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
@@ -7420,6 +7424,10 @@ button {
   }
 }
 @media screen and (max-width: 991px) {
+  .or-why-choose-feature {
+    padding: 10px;
+  }
+
   .or-footer-widget .or-contact-widget,
 .or-footer-widget .or-menu-widget {
     padding-left: 0;
