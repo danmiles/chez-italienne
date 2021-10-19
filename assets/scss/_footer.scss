@@ -81,16 +81,21 @@
 	}
 	.or-logo-widget {
 		color: #fff;
+		.footer-logo {
+			max-height: 100px;
+		}
 		p {
 			padding: 25px 0px 25px;
-		}
+		}		
 		.footer-social {
 			a {
 				margin-right: 20px;
+
 				&:hover {
 					color: $color-2;
 					margin-top: -5px;
 				}
+
 			}
 		}
 	}

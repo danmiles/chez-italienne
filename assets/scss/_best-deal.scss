@@ -16,9 +16,14 @@
 }
 .or-best-deal-content {
 	max-width: 405px;
+	.best-deal_button {
+		background-color: $base-color;
+		margin-top: 20px;	
+		margin-left: 0;	
+		@extend%btn-style-1;		
+	}
 }
-.best-deal-countdown {
-	margin-top: 24px;
+.best-deal-countdown {	
 	li {
 		text-align: center;
 		margin-right: 22px;

@@ -138,9 +138,9 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.5;
-  color: #666666;
+  color: #423f3f;
   font-family: "Barlow", sans-serif;
   -moz-osx-font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased;
@@ -377,9 +377,10 @@ select:visited {
   }
 }
 .or-section-title .sub-title {
-  font-size: 24px;
+  font-size: 30px;
   padding: 0px 20px;
   color: #76a713;
+  font-weight: bold;
   font-family: "Architects Daughter", cursive;
   position: relative;
 }
@@ -451,11 +452,11 @@ select:visited {
   max-width: 550px;
 }
 .or-section-title-3 h2 {
-  color: #010148;
-  font-size: 48px;
+  color: #1a2428;
+  font-size: 40px;
   font-weight: 700;
-  padding: 0px 0px 26px 0px;
-  background-image: url(../img/title-shape.png);
+  padding: 0px 0px 20px 0px;
+  background-image: url(../images/team/title-shape.png);
   background-position: bottom center;
   background-repeat: no-repeat;
 }
@@ -1765,7 +1766,7 @@ select:visited {
 /*---------------------------------------------------- */
 /*Slider area*/
 /*----------------------------------------------------*/
-.or-feature-innerbox .or-feature-text a, .or-blog-btn-3 a, .or-blog-innerbox-3 .read-more, .or-deal-content-3 a, .or-trending-product-item .or-trend-item-text .add-cart-btn, .or-banner-slider-item .or-banner-btn a {
+.or-feature-innerbox .or-feature-text a, .or-blog-btn-3 a, .or-blog-innerbox-3 .read-more, .or-deal-content-3 a, .or-best-deal-content .best-deal_button, .or-trending-product-item .or-trend-item-text .add-cart-btn, .or-banner-slider-item .or-banner-btn a {
   z-index: 1;
   color: #fff;
   height: 55px;
@@ -1774,7 +1775,7 @@ select:visited {
   display: -ms-flexbox;
   display: flex;
   font-weight: 600;
-  margin: 0px 15px;
+  margin: 0 15px;
   border-radius: 5px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1786,7 +1787,7 @@ select:visited {
   border: 2px solid #76a713;
   position: relative;
 }
-.or-feature-innerbox .or-feature-text a:after, .or-blog-btn-3 a:after, .or-blog-innerbox-3 .read-more:after, .or-deal-content-3 a:after, .or-trending-product-item .or-trend-item-text .add-cart-btn:after, .or-banner-slider-item .or-banner-btn a:after {
+.or-feature-innerbox .or-feature-text a:after, .or-blog-btn-3 a:after, .or-blog-innerbox-3 .read-more:after, .or-deal-content-3 a:after, .or-best-deal-content .best-deal_button:after, .or-trending-product-item .or-trend-item-text .add-cart-btn:after, .or-banner-slider-item .or-banner-btn a:after {
   top: 0;
   left: auto;
   right: 0;
@@ -1800,10 +1801,10 @@ select:visited {
   transition: 500ms all ease;
   background-color: #ff7800;
 }
-.or-feature-innerbox .or-feature-text a:hover, .or-blog-btn-3 a:hover, .or-blog-innerbox-3 .read-more:hover, .or-deal-content-3 a:hover, .or-trending-product-item .or-trend-item-text .add-cart-btn:hover, .or-banner-slider-item .or-banner-btn a:hover {
+.or-feature-innerbox .or-feature-text a:hover, .or-blog-btn-3 a:hover, .or-blog-innerbox-3 .read-more:hover, .or-deal-content-3 a:hover, .or-best-deal-content .best-deal_button:hover, .or-trending-product-item .or-trend-item-text .add-cart-btn:hover, .or-banner-slider-item .or-banner-btn a:hover {
   border: 2px solid #ff7800;
 }
-.or-feature-innerbox .or-feature-text a:hover:after, .or-blog-btn-3 a:hover:after, .or-blog-innerbox-3 .read-more:hover:after, .or-deal-content-3 a:hover:after, .or-trending-product-item .or-trend-item-text .add-cart-btn:hover:after, .or-banner-slider-item .or-banner-btn a:hover:after {
+.or-feature-innerbox .or-feature-text a:hover:after, .or-blog-btn-3 a:hover:after, .or-blog-innerbox-3 .read-more:hover:after, .or-deal-content-3 a:hover:after, .or-best-deal-content .best-deal_button:hover:after, .or-trending-product-item .or-trend-item-text .add-cart-btn:hover:after, .or-banner-slider-item .or-banner-btn a:hover:after {
   left: 0;
   opacity: 1;
   width: 100%;
@@ -3554,7 +3555,7 @@ select:visited {
   content: "";
   position: absolute;
   border-radius: 100%;
-  border: 1px solid #666666;
+  border: 1px solid #423f3f;
 }
 .shop-details-option.color-option li.active:before {
   display: block;
@@ -4031,10 +4032,12 @@ select:visited {
 .or-best-deal-content {
   max-width: 405px;
 }
-
-.best-deal-countdown {
-  margin-top: 24px;
+.or-best-deal-content .best-deal_button {
+  background-color: #76a713;
+  margin-top: 20px;
+  margin-left: 0;
 }
+
 .best-deal-countdown li {
   text-align: center;
   margin-right: 22px;
@@ -5156,7 +5159,7 @@ select:visited {
   padding: 20px 20px 40px;
 }
 .or-blog-innerbox-3 .or-blog-title h3 {
-  color: #010148;
+  color: #1a2428;
   font-size: 24px;
   font-weight: 700;
   line-height: 1.333;
@@ -5167,8 +5170,8 @@ select:visited {
 }
 .or-blog-innerbox-3 .read-more {
   width: 150px;
-  height: 50px;
-  color: #010148;
+  height: 55px;
+  color: #1a2428;
   margin-left: 0;
 }
 .or-blog-innerbox-3 .read-more:hover {
@@ -5937,8 +5940,8 @@ select:visited {
   padding-top: 70px;
 }
 .or-testimonial-text-2 h2 {
-  color: #010148;
-  font-size: 48px;
+  color: #1a2428;
+  font-size: 40px;
   font-weight: 700;
   padding-bottom: 40px;
 }
@@ -6731,7 +6734,7 @@ button {
   height: 2px;
   content: "";
   position: absolute;
-  background-color: #666666;
+  background-color: #423f3f;
   -webkit-transition: 300ms all ease;
   transition: 300ms all ease;
 }
@@ -6970,6 +6973,9 @@ button {
 .or-footer-widget .or-logo-widget {
   color: #fff;
 }
+.or-footer-widget .or-logo-widget .footer-logo {
+  max-height: 100px;
+}
 .or-footer-widget .or-logo-widget p {
   padding: 25px 0px 25px;
 }
@@ -7076,7 +7082,7 @@ button {
 }
 
 .or-footer-section-2 .or-footer-widget .or-logo-widget {
-  color: #666666;
+  color: #423f3f;
 }
 .or-footer-section-2 .or-footer-widget .widget-title,
 .or-footer-section-2 .or-footer-widget .or-menu-widget li a,
