@@ -1,18 +1,31 @@
 <?php
-$nom = ($_POST['nom']);
-$prenom = ($_POST['prenom']);
-$email = ($_POST['text1']);
-$sujet = ($_POST['sujet']);
-$message = ($_POST['message']);
 
-$to = "dannnn163@gmail.com";
-$body = "De la part de : $nom $prenom, $email \n\nMessage: \n$message \n\nCordialement, $nom $prenom.";
+// Define some constants
+define( "RECIPIENT_NAME", "John Doe" );
+define( "RECIPIENT_EMAIL", "dannnn163@gmail.com" ); //write your mail here
 
-if (!empty($email) && !empty($message)) {
-    if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        mail($to, $sujet, $body);
-        header('Location: mail-send.html');
-    } else {
-        header('Location: mail-failed.html');
-    }
+// Read the form values
+$success = false;
+$userName = isset( $_POST['name'] ) ? preg_replace( "/[^\s\S\.\-\_\@a-zA-Z0-9]/", "", $_POST['name'] ) : "";
+$senderEmail = isset( $_POST['Email'] ) ? preg_replace( "/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['Email'] ) : "";
+$senderPhone = isset( $_POST['phone'] ) ? preg_replace( "/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['phone'] ) : "";
+$userSubject = isset( $_POST['subject'] ) ? preg_replace( "/[^\s\S\.\-\_\@a-zA-Z0-9]/", "", $_POST['subject'] ) : "";
+$message = isset( $_POST['message'] ) ? preg_replace( "/(From:|To:|BCC:|CC:|Subject:|Content-Type:)/", "", $_POST['message'] ) : "";
+
+// If all values exist, send the email
+if ( $userName && $senderEmail && $senderPhone && $userSubject && $message) {
+  $recipient = RECIPIENT_NAME . " <" . RECIPIENT_EMAIL . ">";
+  $headers = "From: " . $userName . "";
+  $msgBody = " Email: ". $senderEmail . " Phone: ". $senderPhone . " Subject: ". $userSubject . " Message: " . $message . "";
+  $success = mail( $recipient, $headers, $msgBody );
+
+  //Set Location After Successsfull Submission
+  header('Location: mail-send.html?message=Successfull');
 }
+
+else{
+	//Set Location After Unsuccesssfull Submission
+  	header('Location: mail-failed.html?message=Failed');	
+}
+
+?>

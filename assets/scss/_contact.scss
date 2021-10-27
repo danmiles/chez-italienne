@@ -1,5 +1,19 @@
+/*Mixin media*/
+/*----------------------------------------------------*/
+@import 'mixins-media';
+/*---------------------------------------------------- */
+
 .or-contact-info-section {
-    padding: 100px 0px;
+    padding: 100px 0;
+    @include laptop {
+        padding-top: 15px;
+    }
+    .contact-google-map {
+        @include laptop {
+            min-height: 500px;
+            margin-bottom: 20px;
+        }        
+    }
 }
 .or-contact-innerbox-layout1 .item--inner {
     padding: 44px 15px 40px;

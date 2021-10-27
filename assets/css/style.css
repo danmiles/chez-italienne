@@ -6374,8 +6374,22 @@ select:visited {
 /*---------------------------------------------------- */
 /*Contact area*/
 /*----------------------------------------------------*/
+/*Mixin media*/
+/*----------------------------------------------------*/
+/*---------------------------------------------------- */
 .or-contact-info-section {
-  padding: 100px 0px;
+  padding: 100px 0;
+}
+@media (max-width: 991px) {
+  .or-contact-info-section {
+    padding-top: 15px;
+  }
+}
+@media (max-width: 991px) {
+  .or-contact-info-section .contact-google-map {
+    min-height: 500px;
+    margin-bottom: 20px;
+  }
 }
 
 .or-contact-innerbox-layout1 .item--inner {
@@ -7640,10 +7654,6 @@ button {
 
   .or-contact-innerbox {
     margin-bottom: 30px;
-  }
-
-  .or-contact-info-section {
-    padding: 50px 0px 20px;
   }
 
   .or-main-cart-section .top-sticky {
