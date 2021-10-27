@@ -8,6 +8,9 @@
     @include laptop {
         padding-top: 15px;
     }
+    .tel-address {
+        margin-bottom: 100px;
+    }
     .contact-google-map {
         @include laptop {
             min-height: 500px;
@@ -29,7 +32,7 @@
     bottom: 0;
     right: 0;
     margin: auto;
-    background-image: url(../img/bg-fancybox1.png);
+    background-image: url(../images/contact/contact-address-bg.png);
     background-color: #76a713;
     z-index: -1;
     -webkit-border-radius: 50px 0 50px 0;

@@ -472,7 +472,7 @@ select:visited {
 }
 
 .or-section-title-4 h2 {
-  color: #010148;
+  color: #1a2428;
   font-size: 36px;
   font-weight: 700;
   padding-bottom: 18px;
@@ -2226,6 +2226,10 @@ select:visited {
 /*---------------------------------------------------- */
 .or-about-section-1 {
   padding-bottom: 165px;
+}
+
+.about-us__page {
+  padding-top: 100px;
 }
 
 .or-about-img-text-wrapper-1 {
@@ -4343,7 +4347,7 @@ select:visited {
   height: 198px;
   position: absolute;
   border-radius: 100%;
-  border: 3px dotted #e6e6e8;
+  border: 5px dotted #e6e6e8;
   -webkit-animation-duration: 1500ms;
   animation-duration: 1500ms;
   -webkit-animation: rotate-anim 10s infinite linear;
@@ -4395,7 +4399,7 @@ select:visited {
   right: -37px;
 }
 .or-team-innerbox:hover .or-team-img:before {
-  border: 3px dotted #ff7800;
+  border: 5px dotted #ff7800;
   -webkit-animation-play-state: running;
           animation-play-state: running;
 }
@@ -6385,6 +6389,9 @@ select:visited {
     padding-top: 15px;
   }
 }
+.or-contact-info-section .tel-address {
+  margin-bottom: 100px;
+}
 @media (max-width: 991px) {
   .or-contact-info-section .contact-google-map {
     min-height: 500px;
@@ -6407,7 +6414,7 @@ select:visited {
   bottom: 0;
   right: 0;
   margin: auto;
-  background-image: url(../img/bg-fancybox1.png);
+  background-image: url(../images/contact/contact-address-bg.png);
   background-color: #76a713;
   z-index: -1;
   border-radius: 50px 0 50px 0;
@@ -6907,7 +6914,6 @@ button {
   color: #fff;
   font-size: 28px;
   font-weight: 700;
-  padding-bottom: 13px;
 }
 .or-footer-newslatter-1 .or-footer-newslatter-content .or-footer-newslatter-form input {
   width: 100%;

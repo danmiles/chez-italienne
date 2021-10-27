@@ -40,7 +40,7 @@
 			height: 198px;
 			position: absolute;
 			border-radius: 100%;
-			border: 3px dotted #e6e6e8;
+			border: 5px dotted #e6e6e8;
 			-webkit-animation-duration: 1500ms;
 			animation-duration: 1500ms;
 			-webkit-animation: rotate-anim 10s infinite linear;
@@ -100,7 +100,7 @@
 	&:hover {
 		.or-team-img {
 			&:before {
-				border: 3px dotted $color-2;
+				border: 5px dotted $color-2;
 				animation-play-state: running;
 			}
 		}
