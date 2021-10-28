@@ -721,7 +721,7 @@ select:visited {
 .organio-header-section.header-style-one .site-logo a img {
   height: 60px;
   width: 60px;
-  margin-left: 50px;
+  margin-left: 30px;
 }
 @media (max-width: 1150px) {
   .organio-header-section.header-style-one .site-logo a img {
@@ -4359,7 +4359,7 @@ select:visited {
 }
 .or-team-innerbox .or-taam-item-holder {
   margin: auto;
-  max-width: 250px;
+  max-width: 270px;
 }
 .or-team-innerbox .or-team-meta {
   color: #fff;
