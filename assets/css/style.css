@@ -2284,6 +2284,12 @@ select:visited {
   overflow: hidden;
 }
 
+.or-category-slider-wrapper_shop {
+  padding-left: 30px;
+  padding-right: 30px;
+  overflow: hidden;
+}
+
 .or-category-slider-inner-item:hover.type-1 .or-category-img .cat-latter {
   color: #76a713;
 }
