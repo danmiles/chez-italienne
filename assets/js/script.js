@@ -973,7 +973,7 @@ Last change:    00/00/00
 			},
 			countDown:  function (){
 				if ($('.best-deal-countdown').length > 0) {
-					var deadlineDate = new Date('oct 11, 2021 9:00:00').getTime();
+					var deadlineDate = new Date('January 27, 2022 19:00:00').getTime();
 					var countdownDays = document.querySelector('.days .or-count-down-number');
 					var countdownHours = document.querySelector('.hours .or-count-down-number');
 					var countdownMinutes = document.querySelector('.minutes .or-count-down-number');
